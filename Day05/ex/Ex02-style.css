@@ -1,0 +1,42 @@
+*{
+    margin: auto;
+}
+.flex{
+    display: flex;
+}
+#wrap{
+    width: 1200px;
+    background-color:pink;
+}
+header{
+    height: 100px;
+    background-color: plum;
+}
+nav{
+    height: 50px;
+    background-color: powderblue;
+}
+.contents{
+    height: 450px;
+    background-color: lightcoral;
+}
+.contents > .left{
+    width: 70%;
+    height: 450px;
+    background-color: rgb(224, 57, 57);
+}
+.contents > .left > .atc{
+    width: 700px;
+    height: 200px;
+    background-color: navajowhite;
+    margin-top: 15px;
+}
+.contents > aside{
+    width: 30%;
+    height: 450px;
+    background-color: magenta;
+}
+footer{
+    height: 200px;
+    background-color: lightsalmon;
+}

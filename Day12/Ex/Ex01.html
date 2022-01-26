@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>예제 - change 이벤트</title>
+        <meta charset="utf-8">
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+
+    </head>
+    <body>
+        좋아하는 동물을 하나만 선택하세요:
+        <label><input type="radio" name="animal" value="dog" checked>개</label>
+        <input type="radio" name="animal" value="cat" id="cat"><label for="cat">고양이</label>
+        <label><input type="radio" name="animal" value="lion">사자</label>
+        <br><br>
+
+        <button type="button" id="likeCatBtn">고양이를 선택하는 버튼</button>
+        <br>
+        <button type="button" id="likeCancelBtn">선택 해제 버튼</button>
+        <hr>
+
+        주소 이동:
+        <select id="site">
+            <option>---선택하기---</option>
+            <option value="naver">네이버</option>
+            <option value="daum">다음</option>
+            <option value="google">구글</option>
+            <option value="nate">네이트</option>
+        </select>
+
+        <script>
+            $(document).ready(function(){
+                $("#likeCatBtn").on("click", function(){
+                    $("#cat").prop("checked", true);
+                })
+
+                // radio 버튼에 변경이 일어났을 때 
+                $("input[name=animal]").on("change" , function(){
+                    // check된 값 찾기 
+                    let checkedValue = $("input[name=animal]:checked").val();
+                    alert(checkedValue);
+                })
+
+                $("#likeCancelBtn").on("click", function(){
+                    // 이름이 animal인 모든 input의 checked 프로퍼티를 제거한다.
+                    $("input[name=animal").prop("checked", false);
+                });
+
+                $("#site").on("change", function(){
+                    let selectedValue = $("#site option:selected").val();
+                    
+                    // 새로고침 
+                    //location.reload();
+
+                    if (selectedValue == 'naver'){
+                        location.href = "https://naver.com"
+                    } else if (selectedValue == 'daum'){
+                        location.href = "https://daum.net"
+                    } else if (selectedValue == "google"){
+                        location.href = "https://google.com"
+                    } else if(selectedValue == "nate"){
+                        location.href = "https://nate.com"
+                    }
+                })
+            });
+        </script>
+    </body>
+</html>

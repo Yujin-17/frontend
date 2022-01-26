@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    font-size:  20px;
+}
+.flex{
+    display: flex;
+}
+#wrap{
+    width: 1200px;
+    background-color: rgb(0, 0, 0);
+}
+header{
+    height: 100px;
+    background-color: blue;
+}
+header > .logo{
+    width: 200px;
+    background-color: rgb(93, 9, 26);
+}
+header > nav{
+    width: 1000px;
+    background-color: rgb(170, 142, 196);
+}
+.contents{
+    width: 1200px;
+    height: 400px;
+    background-color: deeppink;
+}
+.contents > .contents1{
+    width: 600px;
+    height: 400px;
+    background-color: salmon;
+}
+.contents > .div1{
+    width: 600px;
+    height: 400px;
+    background-color: aliceblue;
+}
+.atc1{
+    width: 600px;
+    height: 200px;
+    background-color: chartreuse;
+    float: right;
+}
+.atc2{
+    width: 600px;
+    height: 200px;
+    background-color: rgb(50, 179, 211);
+    float: right;
+}
+footer{
+    height: 80px;
+    background-color: violet;
+}
+footer > .footer-div{
+    width: 200px;
+    background-color: tomato;
+}
+footer > address{
+    width: 800px;
+    background-color: blanchedalmond;
+}

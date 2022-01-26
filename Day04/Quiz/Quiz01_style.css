@@ -1,0 +1,36 @@
+.layer{
+    width: 100px;
+    height: 100px;
+}
+.flex{
+    display: flex;
+}
+.margin-top-30{
+    margin-top: 30px;
+}
+.margin-right-20{
+    margin-right: 20px;
+}
+.margin-top-20{
+    margin-top: 20px;
+}
+.margin-left-300{
+    margin-left: 300px;
+}
+.margin{
+    margin: 10px;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+
+.yellow{
+    background-color: yellow;
+}
+.blue{
+    background-color: blue;
+}
+

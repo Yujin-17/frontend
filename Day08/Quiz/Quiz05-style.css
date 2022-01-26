@@ -1,0 +1,27 @@
+header{
+    height: 150px;
+}
+h1{
+    font-size: 60px;
+}
+.top-menu{
+    font-size: 14px;
+}
+.nav-link{
+    color: rgb(129, 128, 128);
+}
+.nav2{
+    color: black;
+}
+.section-bottom{
+    height: 500px;
+}
+.section-bottom-clothestext{
+    height: 120px;
+}
+footer{
+    height: 200px;
+}
+.footer-text{
+    font-size: 12px;
+}

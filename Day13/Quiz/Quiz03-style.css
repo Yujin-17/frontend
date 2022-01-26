@@ -1,0 +1,21 @@
+#top{
+    font-weight: bold;
+    font-size: 50px;
+}
+#eventName{
+    width: 500px;
+    height: 40px;
+}
+#firstDay{
+    width: 200px;
+    height: 40px;
+}
+#closeDay{
+    width: 200px;
+    height: 40px;
+}
+#button{
+    width: 550px;
+    height: 40px;
+    background-color: rgb(59, 142, 251);
+}

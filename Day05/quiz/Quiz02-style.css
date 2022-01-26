@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+}
+.flex{
+   display: flex; 
+}
+#wrap{
+    width: 1200px;
+    height: 1200px;
+    background-color: mediumpurple;
+}
+header{
+    width: 1200px;
+    height: 100px;
+    background-color: moccasin;
+}
+.contents > aside{
+    width: 70%;
+    height: 1000px;
+    background-color: olivedrab;
+}
+.contents > .box1{
+    width: 30%;
+    height: 1000px;
+    background-color: paleturquoise;
+}
+footer{
+    width: 1200px;
+    height: 100px;
+    background-color: orange;
+}
+footer > .footer-div{
+    width: 200px;
+    height: 100px;
+    background-color: palevioletred;
+}
+footer > address{
+    width: 800px;
+    height: 100px;
+    background-color: peru;
+}

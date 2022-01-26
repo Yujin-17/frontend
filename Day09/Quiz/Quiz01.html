@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>변수와 if문</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            let a = 5;
+            let b = 8;
+            sum = a*b;
+            // alert(a + "*" + b + "=" +sum);
+
+            var number1 = "12";
+            var number2 = "34";
+            
+            console.log(number1 + number2); 
+            console.log(number1 + "" + number2);
+            console.log(String(number1) + String(number2));
+
+            var number3 = 10;
+            var number4 = "10";
+            if(number3 === number4){
+                console.log("두 값은 같다.")
+            }else console.log("두 값은 같지 않다.");
+
+            if(number3 !== number4){
+                console.log("두 값은 같지 않다.");
+            }
+
+            let score;  // undefined
+            let number = null;
+            // == : undefind와 null을 같은 취급
+            if(score == number){
+                console.log(true);
+            }
+            // === : 타입이 모두 일치할 경우 true
+            if(score === undefined && number === null){
+                console.log(true);
+            }
+
+            // 변수 예시(비정상적인 경우)
+        
+
+            var userId = "marobiana";
+            if(userId == "marobiana"){
+                console.log("안녕하세요 " + userId + "님");
+            }else alert("비정상적인 접근입니다.");
+
+            if(userId == null || userId == ""){
+                // 비정상
+                alert("비정상적인 접근입니다.");
+            }else{
+                // 정상
+                console.log("안녕하세요 "+ userId +"님");
+            }
+
+            
+            var word1 = "hello";
+
+            if(word1 == "hello") {
+            var word2  = " world";
+            }
+
+            console.log(word1 + word2);
+        </script>
+    </body>
+</html>

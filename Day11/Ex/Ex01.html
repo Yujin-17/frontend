@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>제목</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1 class="class h1">Hello World!</h1>
+        <div id="contents" class="class-div">
+            <p id="p1" class="class-p" name="p_name">내 이름은 유진이다.</p>
+            <p id="p2" class="class-p" name="p_name">내 이름은 우진이다.</p>
+            <a href="http://marondal.com" class="class-a">마론달로 이동</a>
+        </div>
+    
+        <script>
+            // id로 node 가져오기: id는 하나이므로 한개의 노드를 얻는다.
+            let p1 = document.getElementById("p1");
+            console.log(p1);
+
+            // class로 node들 가져오기: class는 여러개가 가능하므로 N개의 노드를 얻는다.
+            let pClasses = document.getElementsByClassName("class-p");
+            console.log(pClasses);
+
+            // 태그명으로 node들 가져오기
+            let pTags = document.getElementsByTagName("p");
+            console.log(pTags);
+
+            // name 속성으로 node들 가져오기
+            let pNames = document.getElementsByName("p_name");
+            console.log(pNames);
+        </script>
+    </body>
+</html>

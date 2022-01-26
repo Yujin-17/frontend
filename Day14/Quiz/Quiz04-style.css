@@ -1,0 +1,21 @@
+#wrap{
+    height: 700px;
+}
+
+header{
+    font-weight: bold;
+    font-size: 30px;
+    color:#ffffff;
+    height: 80px;
+}
+.contents{
+    height: 400px;
+}
+footer{
+    height: 40px;
+    background-color: #f4f4f4;
+}
+.copyright{
+    font-size: 12px;
+    color: grey;
+}

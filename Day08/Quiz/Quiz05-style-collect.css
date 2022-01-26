@@ -1,0 +1,43 @@
+#wrap{
+    width: 1200px;
+    margin: auto;
+}
+header{
+    height: 100px;
+}
+.top-menu-font{
+    font-size: 13px;
+    color: #888;
+}
+.top-menu-font:hover{
+    font-size: 13px;
+    color: #333;
+}
+/* nav 클래스가 height 높이를 잡아주므로 제거 
+.menu{
+    height: 50px;
+} */
+.menu-bg{
+    background-color: #ddd;
+}
+.menu-link-text{
+    color: dimgray;
+    font-weight: bold;
+}
+.menu-link-text:hover{
+    color: #999;
+    font-weight: bold;
+}
+.banner{
+    height: 400px;
+}
+.product{
+    height: 450px;
+}
+footer{
+    height: 100px;
+}
+.footer-font{
+    color: #888;
+    font-size: 12px;
+}

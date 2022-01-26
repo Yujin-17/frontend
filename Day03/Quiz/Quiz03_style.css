@@ -1,0 +1,33 @@
+#year{
+    font-size: 25px;
+    font-weight: bold;
+}
+#month{
+    font-size: 50px;
+    font-weight: bold;
+}
+.holiday{
+    color: red;
+}
+.today{
+    font-weight: bold;
+    background-color: beige;
+}
+
+table, th, td{
+    border: 1px solid #000;
+    border-collapse: collapse;
+    
+}
+th{
+    height: 30px;
+}
+td{
+    width: 150px;
+    height: 100px;
+    vertical-align: top;
+    padding: 10px;
+}
+td:hover{
+    background-color: salmon;
+}

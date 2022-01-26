@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>input 태그</title>
+    </head>
+    <body>
+      <!-- input 태그 --> 
+      
+      <b>ID</b>
+      <input type="text"><br><br>
+
+      <b>Password</b>
+      <input type="password"><br>
+      <b>Password 확인</b>
+      <input type="password"><br><br>
+
+      <!-- radio type: name이 같으면 같은 이름의 태그 중에 하나만 선택된다. -->
+      <b>성별</b><br>
+      남자<input type="radio" name="gender" value="male" checked>
+      여자<input type="radio" name="gender" vallue="female"><br><br>
+
+      <!-- checkbox type: 여러개를 선택할 수 있다. -->
+      <b>취미</b><br>
+      <label>독서<input type="checkbox" name = "hobby" value="reading"></label>
+      <label>게임<input type="checkbox" name = "hobby" value="game"></label>
+      <label for="health">헬스</label><input type="checkbox" name="hobby" value="health" id="health">
+      <label for="mountain">등산</label><input type="checkbox" name="hobby" value="mountain" ID="mountain">
+      <br><br>
+      <!-- file type -->
+      <b>프로필 사진 업로드</b><br>
+      <input type="file">
+      <br><br>
+
+      <!-- submit type: 데이터를 서버에 전송하는 버튼 -->
+      <input type="submit" value="작성 완료">
+
+      <hr>
+      <!-- 일반 버튼 -->
+      <button type="button">버튼</button><br><br>
+
+    <!-- 
+        예) type="button"    <- 속성(attribute)  - key와 value
+        예) checked   selected    <- 프로퍼티(property) - 단독 사용
+    -->
+
+      <!-- select 태그 -->
+      <b>좋아하는 과일은?</b><br>
+
+      <select>
+          <option>선택</option>
+          <option>사과</option>
+          <option selected>메론</option>
+          <option>딸기</option>
+          <option>바나나</option>
+      </select>
+
+      <br><br>
+
+      <!-- textarea -->
+      <b>자기소개</b><br>
+      <textarea rows="10" cols="100"></textarea>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+#logo{
+    color: red;
+}
+section{
+    justify-content: center;
+}
+#contentsName{
+    font-weight: bold;
+    font-size: 30px;
+
+}
+#content1{
+    color: #6f6f66;
+}
+#btn{
+    color: white;
+}
+footer{
+    color: #6f6f66;
+}

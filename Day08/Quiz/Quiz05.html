@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>부트스트랩을 이용한 레이아웃</title>
+        <!-- 문서 인코딩 종류 -->
+        <meta charset="utf-8"></meta>
+
+        <!-- bootstrap CDN link -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <!-- 외부 스타일시트 정의-->
+        <link rel="stylesheet" href="Quiz05-style.css" type="text/css">
+    </head>
+    <body>
+        <div id="wrap" class="container">
+            <header class=" d-flex justify-content-between">
+                <div class="logo col-3 d-flex align-items-end mb-1">
+                    <div class="input-group">
+                        <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                          <span class="input-group-text" id="basic-addon2">검색</span>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-5 d-flex align-items-end justify-content-center">
+                    <div>
+                        <h1>상맨</h1>
+                        <h6>상 남자의 패션몰</h6>
+                    </div>
+                </div>
+                <div class="">
+                    <ul class="nav top-menu">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">로그인</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">회원가입</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">고객센터</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link " href="#">장바구니</a>
+                        </li>
+                      </ul>
+                </div>
+            </header>
+            <nav class="nav bg-secondary">
+                <ul class="nav nav-fill">
+                    <li class="nav-item">
+                      <a class="nav2 nav-link active" href="#">Outer</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav2 nav-link" href="#">Top</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav2 nav-link" href="#">Shirt</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav2 nav-link" href="#">Pants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav2 nav-link" href="#">Accessory</a>
+                      </li>
+                  </ul>
+            </nav>
+            <section>
+                <section class="section-top">
+                    <img src="http://marondal.com/material/images/dulumary/web/front/bootstrap/test05_main_banner.jpg" alt="메인 배너" width="1110" height="500px">
+                </section>
+                <section class="section-bottom">
+                    <div class="mt-4">
+                        <h2>Best seller</h2>
+                    </div>
+                    <div class="section-bottom-text bg-light"></div>
+                    <div class="section-bottom-clothes d-flex justify-content-between">
+                        <img src="http://marondal.com/material/images/dulumary/web/front/bootstrap/test05_best1.jpg" alt="베스트 상품1" width="">
+                        <img src="http://marondal.com/material/images/dulumary/web/front/bootstrap/test05_best2.jpg" alt="베스트 상품1" width="">
+                        <img src="http://marondal.com/material/images/dulumary/web/front/bootstrap/test05_best3.jpg" alt="베스트 상품1" width="">
+                        <img src="http://marondal.com/material/images/dulumary/web/front/bootstrap/test05_best4.jpg" alt="베스트 상품1" width="">
+                        <img src="http://marondal.com/material/images/dulumary/web/front/bootstrap/test05_best5.jpg" alt="베스트 상품1" width="">
+                    </div>
+                    <div class="section-bottom-clothestext d-flex justify-content-between">
+                        <div class="">
+                            <strong>리얼 가죽 무스탕</strong>
+                            <del>87,000원</del>
+                            <p>55,000원</p>
+                        </div>
+                        <div class="">
+                            <Strong>[1+1]기본 버튼 반팔티</strong>
+                            <del>15,000원</del>
+                            <p>7,000원</p>
+                        </div>
+                        <div class="">
+                            <strong>정장 스타일 무지 조끼</strong>
+                            <del>45,000원</del>
+                            <p>40,000원</p>
+                        </div>
+                        <div class="">
+                            <strong>스키니핏 씨블루 정장 자켓</strong>
+                            <del>53,000원</del>
+                            <p>45,000원</p>
+                        </div>
+                        <div class="">
+                            <strong>프리미엄 올라운드 데님셔츠</strong>
+                            <del>33,000원</del>
+                            <p>30,000원</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <footer class="d-flex align-items-top justify-content-center">
+                <div class="footer-text text-center">
+                        회사:Sangman 대표:김상남<br>
+                        주소: 서울시 종로구 아무개로 32번길 93 패션타운 806호<br>
+                        사업자 번호:1010101010-1010101000<br>
+                        Copyright 2021.sangman All Right Reserved.
+        
+                </div>
+            </footer>
+
+        </div>
+    </body>

@@ -1,0 +1,18 @@
+header{
+    height: 100px;
+}
+nav{
+    height: 50px;
+}
+.contents{
+    height: 300px;
+}
+.contents > .left{
+    height: 300px;
+}
+.contents > aside{
+    height: 300p;
+}
+footer{
+    height: 150px;
+}

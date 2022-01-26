@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>datepicker</title>
+        <meta charset="utf-8">
+
+        <!-- 제일 위에 jquery가 있어야함. -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+        <!-- datepicker 라이브러리 -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    </head>
+    <body>
+        <p>
+            <span>날짜 선택:</span>
+            <input type="text" id="datepicker">
+        </p>
+
+        <p>
+            <span>날짜 선택(옵션):</span>
+            <input type="text" id="datepickerOption">
+        </p>
+
+        <p>
+            <span>날짜 선택(이벤트):</span>
+            <input type="text" id="datepickerEvent">
+        </p>
+        <script>
+            $(document).ready(function(){
+                $("#datepicker").datepicker(); // 날짜를 선택할 수 있는 창이 띄워진다. 
+
+                $("#datepickerOption").datepicker({
+                    changeMonth: true // 월을 선택(셀렉트)
+                    , changeYear: true // 년을 선택(셀렉트)
+                    , dateFormat: "yy-mm-dd"    // 2022-01-04
+                    , showAnim: "fadeIn"      // 애니메이션 효과: slide, fadeIn, clip .....
+                });
+
+                $("#datepickerEvent").datepicker({
+                    changeMonth: true
+                    , dateFormat: 'yy-mm-dd'
+                    , beforeShow: function(input){
+                        alert("데이트피커가 열리기 전에 호출")
+                    }
+                    , onSelect: function(dateText){
+                        // 날짜가 선택됐을 때 호출되는 함수 
+                        alert("선택된 날짜: " + dateText);
+                    }
+                    , onClose: function(dateText){
+                        // 날짜가 선택되거나 닫혔을 때 둘 다 호출되는 함수
+                        alert("데이트 피커가 닫힌다.")
+                    }
+                })
+            })
+
+        </script>
+    </body>
+</html>

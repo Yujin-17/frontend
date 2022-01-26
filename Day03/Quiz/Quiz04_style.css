@@ -1,0 +1,28 @@
+table{
+    width: 950px;
+    height: 150px;
+    vertical-align: middle;
+    text-align: center;
+}
+thead{
+    font-weight: bold;
+    background-color: pink;
+    border: 1px solid;
+}
+tbody td{
+    width: 130px;
+}
+tbody tr:hover{
+    background-color: plum;
+}
+#sum{
+   text-align: right;
+}
+#button{
+   width: 900px;
+   height: 30px;
+}
+.text{
+    width: 130px;
+    height: 25px;
+}

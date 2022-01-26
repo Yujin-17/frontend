@@ -1,0 +1,41 @@
+#wrap{
+    width: 1250px;
+    margin: auto;
+}
+header{
+    height: 100px;
+}
+.nav-top{
+    color: black;
+
+}
+.nav-top:hover{
+    color: rgb(66, 66, 66);
+}
+.contents{
+    height: 600px;
+}
+.nav-bottom{
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+}
+.nav-bottom:hover{
+    background-color: rgb(124, 124, 124);
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+}
+.section-right{
+    flex-wrap: wrap;
+}
+article{
+    width: 300px;
+    height: 200px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+footer{
+    height: 150px;
+    font-size: small;
+}

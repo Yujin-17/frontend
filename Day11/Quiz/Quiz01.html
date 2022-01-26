@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>문제1</title>
+        <meta charset="utf-8">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        
+        <style>
+            .hide-box{
+                display: none;
+            }
+            .red-small{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+            }
+            .green-large{
+                width: 300px;
+                height: 300px;
+                background-color: green;
+            }
+        </style>
+        <script>
+            $(document).ready(function(){
+
+                // 1. 비밀번호 일치
+                $('#confirmBtn').on("click", function(){
+                        let text1 = $("#pw").val();
+                        let text2 = $("#pwConfirm").val();
+                        text1 = text1.trim();
+                        text2 = text2.trim();
+
+                        // if(text1 == text2){
+                        //     alert("확인 완료");
+                        // }else if(text1.length < 1 || text2.length < 1 ){
+                        //     alert("비밀번호를 입력해주세요");
+                        // }else if(text1 != text2){
+                        //     alert("비밀번호가 일치하지 않습니다.");
+                        // }
+
+                        if(text1.length < 1 || text2 ==""){
+                            alert("비밀번호를 입력해주세요.")
+                            return;
+                        }
+                        if(text1 != text2){
+                            alert("비밀번호가 일치하지 않습니다.")
+                            return;
+                        }
+                        alert("확인완료 ")
+
+                })
+
+                // 2. 금칙어 포함 여부 확인
+                $('#searchBtn').on('click', function(e) {
+                    var bannedWords = ["십장생", "시베리아", "조카신발", "쌍쌍바", "십원짜리"];
+                    var search = $('#search').val();
+                    
+                    for (bannedWord of bannedWords) {
+                        if (search.includes(bannedWord)) {
+                            alert("금칙어가 포함되어 있습니다. 검색할 수 없습니다.");
+                            return;
+                        }
+                    }
+                });
+
+                    // 서버 => 검색 수행
+
+                
+
+                // 3. 더보기
+           
+                $('#moreBtn').on('click', function(e) {
+                    if ($('#moreDescription').is(':visible')) {
+                        $('#moreDescription').hide();
+                        $('#moreBtn').text("더보기");
+                    } else {
+                        $('#moreDescription').show();
+                        $('#moreBtn').text("닫기");
+                    }
+                });
+            
+                // 4. 사각형 바꾸기
+                $("#changeBoxBtn").on("click", function(){
+                    // red-small이 있나?
+
+                    // 있으면 : red-small 제거, green-large 추가
+                    // 없으면 : red-small 추가, green-large 제거
+                    if ($("#square").hasClass("red-small")){
+                        $("#square").removeClass("red-small");
+                        $("#square").addClass("green-large");
+                    }else{
+                        $("#square").addClass("red-small");
+                        $("#square").removeClass("green-large");
+                    }
+                })
+
+                // 5. 이미지 교체 
+                var images = ["./images/img (1).jpg", "./images/img (2).jpg", "./images/img (3).jpg"];
+                var currentIndex = 0;
+
+                $("#prev").on("click", function(){
+                    currentIndex--;
+
+                    if(currentIndex < 0){
+                        currentIndex = images.length -1;
+                    }
+                    $("#img").attr("src", images[currentIndex]);
+                })
+
+                $("#next").on("click", function(){
+                    currentIndex++;
+                    if(currentIndex > images.length -1){
+                        currentIndex = 0;
+                    }
+
+                    $("#img").attr("src", images[currentIndex]);
+                });
+
+            })
+
+
+        </script>
+    </head>
+    <body>
+
+        <h2>1. 비밀번호 일치</h2>
+        비밀번호: <input type="password" id="pw">
+        비밀번호 확인: <input type="password" id="pwConfirm">
+        <button type="button" id="confirmBtn">확인</button><br>
+        <hr>
+
+        <h2>2. 금칙어 포함 여부 확인</h2>
+        <input type="text" id="search">
+        <button type="button" id="searchBtn">검색</button>
+        <hr>
+
+        <h2>3. 더보기</h2>
+        <button type="button" id="moreBtn">더보기</button>
+        <div id="moreDescription" class="hide-box">
+            숨겨져 있던 추가 설명입니다!!!<br>
+            더보기를 누르면 나옵니다.
+        </div>
+        <hr>
+
+        <h2>4. 사각형 바꾸기</h2>
+        <div id="square" class="red-small"></div> <br>
+        <button type="button" id="changeBoxBtn">교체</button><br>
+        <hr>
+
+        <h2>5. 이미지 교체</h2>
+        <button type="button" id="prev">이전</button>
+        <img id="img" src="./images/img (1).jpg" alt="이미지" height="500px">
+        <button type="button" id="next">다음</button>
+  
+    </body>
+</html>
